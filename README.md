@@ -1,1 +1,2 @@
-# PORTFOLIO
+Building Experience of Portfolio
+While building this portfolio, I focused on learning how to properly structure a responsive website using only HTML and Tailwind CSS, without relying on extra libraries. One challenge was keeping all project cards aligned with equal image sizes and balanced spacing — it taught me attention to small design details. I kept things minimal but made sure it doesn’t look plain by adding gradient backgrounds and hover effects for a dynamic feel. Overall, it was a good hands-on exercise to practice both layout and styling using Tailwind’s utility-first approach.
