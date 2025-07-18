@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Anshul Anand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center p-4 bg-gray-900 text-white fixed w-full z-10 h-24">
+    <div class="text-3xl font-bold">Anshul Anand</div>
+    <ul class="flex space-x-4 text-2xl">
+      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+      <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+      <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center pt-16">
+    <img src="./images/profile.jpeg" alt="Profile" class="w-64 h-64 rounded-full mb-4 shadow-lg">
+    <h1 class="text-5xl font-bold">Anshul Anand</h1>
+    <p class="italic mt-2 text-2xl">"Crafting Ideas with Code and Passion"</p>
+    <button class="text-3xl mt-4 px-6 py-2 bg-yellow-400 rounded hover:bg-yellow-500 transition">
+      <a href="./pages/My resume.pdf">Download Resume</a>
+    </button>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-6 text-center">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="mb-4 text-2xl">
+            Hello! I'm <strong>Anshul Anand</strong>, a B.Tech student at <strong>KIET Group of Institutions</strong>. I just completed my <strong>2nd semester</strong>. I love exploring web development and sharpening my coding skills every day.
+          </p>
+          <p class="text-3xl">Skills:</p>
+          <ul class="list-disc ml-5 text-3xl">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>React (Basics)</li>
+            <li>C++ (DSA Basics)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-3xl font-semibold mb-2">Education Timeline</h3>
+          <ul class="space-y-2 text-2xl">
+            <li class="p-4 bg-white rounded-lg shadow">2023 - Present: B.Tech at KIET Group of Institutions</li>
+            <li class="p-4 bg-white rounded-lg shadow">2023: Completed 12th from Kendriya Vidyalaya No.1, A.F.S Gorakhpur</li>
+            <li class="p-4 bg-white rounded-lg shadow">2021: Completed 10th from Kendriya Vidyalaya No.1, A.F.S Gorakhpur</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-6 text-center">My Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Project Cards -->
+        <div class="bg-white rounded-lg shadow hover:scale-105 transition p-4">
+          <img src="./images/project.jpg" alt="Project 1" class="rounded mb-4">
+          <h3 class="text-4xl font-semibold mb-3">To-Do List App</h3>
+          <p class="text-2xl mb-3">A simple to-do app using HTML, CSS & JS with local storage support.</p>
+          <a href="#" class="text-blue-500 underline text-2xl">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:scale-105 transition p-4">
+          <img src="./images/project.jpg" alt="Project 2" class="rounded mb-4">
+          <h3 class="text-4xl font-semibold mb-3">Personal Portfolio</h3>
+          <p class="text-2xl mb-3">This responsive portfolio built with Tailwind CSS.</p>
+          <a href="#" class="text-blue-500 underline text-2xl">GitHub Repo</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:scale-105 transition p-4">
+          <img src="C:\Users\ASUS\Desktop\anshul\DSA\favicon.ico" alt="Project 3" class="rounded mb-4">
+          <h3 class="text-4xl font-semibold mb-3">DSA Visualizer</h3>
+          <p class="text-2xl mb-3">In progress: Visual tool for sorting algorithm animations.</p>
+          <a href="#" class="text-blue-500 underline text-2xl">GitHub Repo</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-6 text-center">Contact Me</h2>
+      <form class="max-w-lg mx-auto space-y-4 text-2xl">
+        <input type="text" placeholder="Name" class="w-full p-2 border rounded">
+        <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+        <textarea placeholder="Message" rows="4" class="w-full p-2 border rounded"></textarea>
+        <button type="submit" class="w-full bg-yellow-400 p-2 rounded hover:bg-yellow-500 transition">Submit</button>
+      </form>
+
+      <div class="flex justify-center mt-6 space-x-4">
+        <!-- Social Icons -->
+        <a href="#" class="text-3xl hover:text-yellow-500"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-3xl hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 bg-gray-900 text-center text-white text-2xl">
+    © 2025 Anshul Anand | All Rights Reserved.
+  </footer>
+
+</body>
+</html>
